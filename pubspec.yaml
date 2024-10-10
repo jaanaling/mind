@@ -23,11 +23,19 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   advertising_id: ^2.7.1
+  amplitude_flutter: ^3.16.2
+  appsflyer_sdk: ^6.14.3
+  device_info_plus: ^10.1.0
+  package_info_plus: ^8.0.0
+  connectivity_plus: ^6.0.3
+  dio: ^5.5.0+1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   lint: ^2.3.0
+  json_serializable: ^6.8.0
+  build_runner: ^2.4.9
 
 flutter:
   uses-material-design: true
