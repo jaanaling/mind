@@ -5,7 +5,7 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.4.4 <4.0.0'
+  sdk: '>=3.4.0 <4.0.0'
 
 dependencies:
   flutter:
@@ -22,6 +22,7 @@ dependencies:
   easy_localization: ^3.0.7
   flutter_localizations:
     sdk: flutter
+  advertising_id: ^2.7.1
 
 dev_dependencies:
   flutter_test:
@@ -33,7 +34,6 @@ flutter:
 
   assets:
       - assets/
-      - assets/json/
       - assets/translations/
       - assets/image/
 

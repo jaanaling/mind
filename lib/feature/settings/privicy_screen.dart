@@ -1,3 +1,4 @@
+import 'package:bubblebrain/ui_kit/base_app_bar/widget/base_app_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -33,16 +34,17 @@ class _PrivicyScreenState extends State<PrivicyScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return CupertinoPageScaffold(
+    return Scaffold(
       backgroundColor: Colors.transparent,
-      child: SafeArea(
+      appBar: BaseAppBar(title: "Privacy Policy",),
+      body: SafeArea(
         child: Column(
           children: [
             Expanded(
               child: WebViewWidget(
                 controller: _controller
                   ..loadRequest(
-                     Uri.parse("https://yandex.by/"))
+                     Uri.parse("https://bubblebraina.com/privacy.html"))
                   ..setBackgroundColor(
                     Colors.transparent,
                   ),

@@ -43,7 +43,7 @@ class _EditMindMapScreenState extends State<EditMindMapScreen> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    if (widget.map.nodes.length <= 1) {
+    if (_nodes.length <= 1) {
       createTemplate(widget.map.template);
     }
   }
@@ -239,7 +239,7 @@ class _EditMindMapScreenState extends State<EditMindMapScreen> {
           IconButton(
             icon: const Icon(Icons.save),
             onPressed: () {
-              if (widget.map.nodes.isNotEmpty) {
+              if (_nodes.isNotEmpty) {
                 logger.d(_nodes.map((node) => node.title));
                 context.read<MindMapBloc>().add(
                       SaveMap(
@@ -403,9 +403,9 @@ class _EditMindMapScreenState extends State<EditMindMapScreen> {
             node.position += details.focalPointDelta;
 
             final double newSize =
-                (_initialNodeSize * details.scale).clamp(50.0, 300.0);
+                (_initialNodeSize * details.scale).clamp(70.0, 290.0);
 
-            if (newSize > 50.0) {
+            if (newSize > 70.0 && newSize < 290.0) {
               node.size = newSize;
             }
           });
@@ -444,10 +444,9 @@ class _EditMindMapScreenState extends State<EditMindMapScreen> {
       case 'Resource':
         shapeBorder = BeveledRectangleBorder(
           borderRadius: BorderRadius.circular(8.0),
-          side: const BorderSide(width: 2.0),
+          side: const BorderSide(width: 3.0),
         );
-        nodeWidget = _buildDashedBorderNode(node, shapeBorder);
-        return nodeWidget;
+     
       case 'Problem':
         shapeBorder = RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16.0),
@@ -528,7 +527,7 @@ class _EditMindMapScreenState extends State<EditMindMapScreen> {
     String tempSelectedNodeType = selectedNodeType;
     String tempSelectedTag = selectedTag;
     bool isViewMode = true;
-
+logger.d(tempSize);
     showCupertinoDialog(
       context: context,
       builder: (BuildContext context) {
@@ -638,7 +637,7 @@ class _EditMindMapScreenState extends State<EditMindMapScreen> {
                       value: tempSize,
                       thumbColor: tempColor,
                       min: 50.0,
-                      max: 200.0,
+                      max: 300.0,
                       onChanged: (double value) {
                         setDialogState(() {
                           tempSize = value;

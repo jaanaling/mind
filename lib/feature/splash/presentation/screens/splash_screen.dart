@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:bubblebrain/routes/route_value.dart';
+import 'package:advertising_id/advertising_id.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -17,7 +18,11 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future<void> startLoading(BuildContext context) async {
-    await Future.delayed(const Duration(milliseconds: 5000));
+    await Future.delayed(const Duration(milliseconds: 1000));
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      final adId = await AdvertisingId.id(true);
+    });
+     
 
     context.go(RouteValue.mindMap.path);
   }

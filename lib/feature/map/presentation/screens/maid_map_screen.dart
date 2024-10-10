@@ -88,6 +88,7 @@ class _MindMapListScreenState extends State<MindMapListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: BaseAppBar(
         title: 'Your Mind Maps',
         titleWidget: isSearch
@@ -212,12 +213,12 @@ class _MindMapListScreenState extends State<MindMapListScreen> {
                         }).toList(),
                       ),
                     ),
-                    CupertinoButton(
-                        child: Text('privicy').tr(),
-                        onPressed: () => context.push(RouteValue.privicy.path))
-                  ],
+                    ],
                 ),
-              ),
+              ), CupertinoButton(
+                        child: Text('Privacy Policy').tr(),
+                        onPressed: () => context.push(RouteValue.privicy.path),)
+                 
             ],
           ),
         ),
