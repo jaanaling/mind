@@ -163,7 +163,14 @@ enum MapTemples {
   Brainstorming(name: 'Brainstorming'),
   StudyPlan(name: 'Study Plan'),
   ProblemAnalysisAndSolutions(name: 'Problem Analysis and Solutions'),
-  CreatingAProduct(name: 'Creating a Product');
+  CreatingAProduct(name: 'Creating a Product'),
+  UserJourneyMapping(name: 'User Journey Mapping'),
+  ContentCalendar(name: 'Content Calendar'),
+  TeamCollaboration(name: 'Team Collaboration'),
+  MarketingStrategy(name: 'Marketing Strategy'),
+  EventPlanning(name: 'Event Planning'),
+  SWOTAnalysis(name: 'SWOT Analysis');
+
 
   const MapTemples({
     required this.name,

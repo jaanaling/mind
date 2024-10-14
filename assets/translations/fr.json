@@ -105,5 +105,78 @@
     "Idea for Revision": "Idée à réviser",
     "language": "Langue",
     "Instructions": "Instructions",
-  "Untempled": "Non modélisé"
+  "Untempled": "Non modélisé",
+    "User Journey Mapping": "Cartographie du parcours utilisateur",
+    "User Persona": "Persona utilisateur",
+    "Touchpoints": "Points de contact",
+    "Pain Points": "Points de douleur",
+
+
+    "Content Calendar": "Calendrier de contenu",
+    "Content Topics": "Sujets de contenu",
+    "Posting Schedule": "Calendrier de publication",
+    "Responsible Team Members": "Membres de l'équipe responsables",
+
+    "Team Collaboration": "Collaboration en équipe",
+    "Team Members": "Membres de l'équipe",
+    "Roles and Responsibilities": "Rôles et responsabilités",
+    "Communication Channels": "Canaux de communication",
+
+    "Marketing Strategy": "Stratégie marketing",
+    "Target Market": "Marché cible",
+    "Marketing Channels": "Canaux marketing",
+    "Budget Allocation": "Allocation budgétaire",
+
+    "Event Planning": "Planification d'événements",
+    "Event Goals": "Objectifs de l'événement",
+    "Venue": "Lieu",
+    "Guest List": "Liste des invités",
+
+    "SWOT Analysis": "Analyse SWOT",
+    "Strengths": "Forces",
+    "Weaknesses": "Faiblesses",
+    "Opportunities": "Opportunités",
+    "Threats": "Menaces",
+
+    "Earthy Tones": "Tons terreux",
+    "Olive Green": "Vert olive",
+    "Slate Gray": "Gris ardoise",
+    "Tan": "Tan",
+    "Maroon": "Maron",
+    "Burnt Orange": "Orange brûlé",
+
+    "Neon Lights": "Lumières néon",
+    "Neon Green": "Vert néon",
+    "Neon Pink": "Rose néon",
+    "Neon Blue": "Bleu néon",
+    "Neon Yellow": "Jaune néon",
+    "Neon Purple": "Violet néon",
+
+    "Soft Pastels": "Pastels doux",
+    "Mint Green": "Vert menthe",
+    "Baby Blue": "Bleu bébé",
+    "Lavender": "Lavande",
+    "Light Coral": "Corail clair",
+    "Peach Puff": "Pêche",
+
+    "Retro Vibes": "Vibes rétro",
+    "Mustard Yellow": "Jaune moutarde",
+    "Burnt Sienna": "Terre de Sienne brûlée",
+    "Teal": "Canard",
+    "Eggplant": "Aubergine",
+    "Peacock Blue": "Bleu paon",
+
+    "Bright and Bold": "Vibrant et audacieux",
+    "Fuchsia": "Fuchsia",
+    "Electric Blue": "Bleu électrique",
+    "Lime": "Citron vert",
+    "Bright Red": "Rouge vif",
+    "Golden Yellow": "Jaune doré",
+
+    "Gradient Colors": "Couleurs en dégradé",
+    "Sunset Orange": "Orange crépusculaire",
+    "Ocean Blue": "Bleu océan",
+    "Sky Pink": "Rose ciel",
+    "Sunflower Yellow": "Jaune tournesol",
+    "Lavender Purple": "Violet lavande"
 }

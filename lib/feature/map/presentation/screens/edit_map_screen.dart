@@ -99,6 +99,66 @@ class _EditMindMapScreenState extends State<EditMindMapScreen> {
         'Solution': {'name': 'Light Green', 'value': 0xFF98FB98},
       },
     },
+    {
+      'name': 'Earthy Tones',
+      'colors': {
+        'Idea': {'name': 'Olive Green', 'value': 0xFF808000},
+        'Task': {'name': 'Slate Gray', 'value': 0xFF708090},
+        'Resource': {'name': 'Tan', 'value': 0xFFD2B48C},
+        'Problem': {'name': 'Maroon', 'value': 0xFF800000},
+        'Solution': {'name': 'Burnt Orange', 'value': 0xFFCC5500},
+      },
+    },
+    {
+      'name': 'Neon Lights',
+      'colors': {
+        'Idea': {'name': 'Neon Green', 'value': 0xFF39FF14},
+        'Task': {'name': 'Neon Pink', 'value': 0xFFFF6EC7},
+        'Resource': {'name': 'Neon Blue', 'value': 0xFF1B03A3},
+        'Problem': {'name': 'Neon Yellow', 'value': 0xFFFFEA00},
+        'Solution': {'name': 'Neon Purple', 'value': 0xA420FF},
+      },
+    },
+    {
+      'name': 'Soft Pastels',
+      'colors': {
+        'Idea': {'name': 'Mint Green', 'value': 0xFF98FF98},
+        'Task': {'name': 'Baby Blue', 'value': 0xFFBFEFFF},
+        'Resource': {'name': 'Lavender', 'value': 0xFFE6E6FA},
+        'Problem': {'name': 'Light Coral', 'value': 0xFFF08080},
+        'Solution': {'name': 'Peach Puff', 'value': 0xFFFFDAB9},
+      },
+    },
+    {
+      'name': 'Retro Vibes',
+      'colors': {
+        'Idea': {'name': 'Mustard Yellow', 'value': 0xFFFFDB58},
+        'Task': {'name': 'Burnt Sienna', 'value': 0xFFE55B2C},
+        'Resource': {'name': 'Teal', 'value': 0xFF008080},
+        'Problem': {'name': 'Eggplant', 'value': 0xFF4B0082},
+        'Solution': {'name': 'Peacock Blue', 'value': 0xFF0076A8},
+      },
+    },
+    {
+      'name': 'Bright and Bold',
+      'colors': {
+        'Idea': {'name': 'Fuchsia', 'value': 0xFFFF00FF},
+        'Task': {'name': 'Electric Blue', 'value': 0xFF0000FF},
+        'Resource': {'name': 'Lime', 'value': 0xFF00FF00},
+        'Problem': {'name': 'Bright Red', 'value': 0xFFFF0000},
+        'Solution': {'name': 'Golden Yellow', 'value': 0xFFFFD700},
+      },
+    },
+    {
+      'name': 'Gradient Colors',
+      'colors': {
+        'Idea': {'name': 'Sunset Orange', 'value': 0xFFFF4500},
+        'Task': {'name': 'Ocean Blue', 'value': 0xFF1E90FF},
+        'Resource': {'name': 'Sky Pink', 'value': 0xFFFFB6C1},
+        'Problem': {'name': 'Sunflower Yellow', 'value': 0xFFFFE135},
+        'Solution': {'name': 'Lavender Purple', 'value': 0xFF7B68EE},
+      },
+    },
   ];
 
   void _showColorSchemeDialog() {
@@ -1170,6 +1230,228 @@ logger.d(tempSize);
             nodeType: NodeType.problem.name,
             color: '0xFFFFC107',
             description: 'Analysis of competitors.',
+            size: 90,
+          ),
+        ];
+      case 'User Journey Mapping':
+        templateNodes = [
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+              title: 'User Persona',
+            position: Offset(screenSize.width * 0.2, screenSize.height * 0.1),
+            nodeType: NodeType.idea.name,
+            color: '0xFF42A5F5',
+            description: 'Define the target user persona.',
+            size: 150,
+          ),
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Touchpoints',
+            position: Offset(screenSize.width * 0.3, screenSize.height * 0.25),
+            nodeType: NodeType.resource.name,
+            color: '0xFF66BB6A',
+            description: 'Identify all user touchpoints with the product.',
+            size: 90,
+          ),
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Pain Points',
+            position: Offset(screenSize.width * 0.1, screenSize.height * 0.35),
+            nodeType: NodeType.problem.name,
+            color: '0xFFFFC107',
+            description: 'Highlight user pain points.',
+            size: 90,
+          ),
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Opportunities',
+            position: Offset(screenSize.width * 0.25, screenSize.height * 0.45),
+            nodeType: NodeType.solution.name,
+            color: '0xFF66BB6A',
+            description: 'Explore opportunities for improvement.',
+            size: 90,
+          ),
+        ];
+
+      case 'Content Calendar':
+        templateNodes = [
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Content Topics',
+            position: Offset(screenSize.width * 0.2, screenSize.height * 0.1),
+            nodeType: NodeType.idea.name,
+            color: '0xFF42A5F5',
+            description: 'List of topics to cover in content.',
+            size: 150,
+          ),
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Posting Schedule',
+            position: Offset(screenSize.width * 0.3, screenSize.height * 0.25),
+            nodeType: NodeType.resource.name,
+            color: '0xFF66BB6A',
+            description: 'Define the schedule for posting content.',
+            size: 90,
+          ),
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Responsible Team Members',
+            position: Offset(screenSize.width * 0.1, screenSize.height * 0.35),
+            nodeType: NodeType.resource.name,
+            color: '0xFF66BB6A',
+            description: 'Assign team members to content creation.',
+            size: 90,
+          ),
+        ];
+
+      case 'Team Collaboration':
+        templateNodes = [
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Team Members',
+            position: Offset(screenSize.width * 0.2, screenSize.height * 0.1),
+            nodeType: NodeType.resource.name,
+            color: '0xFF66BB6A',
+            description: 'List of all team members involved.',
+            size: 150,
+          ),
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Roles and Responsibilities',
+            position: Offset(screenSize.width * 0.3, screenSize.height * 0.25),
+            nodeType: NodeType.resource.name,
+            color: '0xFF42A5F5',
+            description: 'Define roles and responsibilities of each member.',
+            size: 90,
+          ),
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Communication Channels',
+            position: Offset(screenSize.width * 0.1, screenSize.height * 0.35),
+            nodeType: NodeType.idea.name,
+            color: '0xFF42A5F5',
+            description: 'Specify communication channels used by the team.',
+            size: 90,
+          ),
+        ];
+      case 'Marketing Strategy':
+        templateNodes = [
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Target Market',
+            position: Offset(screenSize.width * 0.2, screenSize.height * 0.1),
+            nodeType: NodeType.resource.name,
+            color: '0xFF42A5F5',
+            description: 'Define the target audience.',
+            size: 150,
+          ),
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Marketing Channels',
+            position: Offset(screenSize.width * 0.3, screenSize.height * 0.2),
+            nodeType: NodeType.idea.name,
+            color: '0xFF42A5F5',
+            description: 'List channels to promote the product.',
+            size: 90,
+          ),
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Budget Allocation',
+            position: Offset(screenSize.width * 0.1, screenSize.height * 0.3),
+            nodeType: NodeType.resource.name,
+            color: '0xFF66BB6A',
+            description: 'Distribute the marketing budget.',
+            size: 90,
+          ),
+        ];
+
+      case 'Event Planning':
+        templateNodes = [
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Event Goals',
+            position: Offset(screenSize.width * 0.2, screenSize.height * 0.1),
+            nodeType: NodeType.idea.name,
+            color: '0xFF42A5F5',
+            description: 'Define the goals of the event.',
+            size: 150,
+          ),
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Venue',
+            position: Offset(screenSize.width * 0.3, screenSize.height * 0.2),
+            nodeType: NodeType.resource.name,
+            color: '0xFF42A5F5',
+            description: 'Select the venue for the event.',
+            size: 90,
+          ),
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Guest List',
+            position: Offset(screenSize.width * 0.1, screenSize.height * 0.3),
+            nodeType: NodeType.resource.name,
+            color: '0xFF66BB6A',
+            description: 'Create a list of guests for the event.',
+            size: 90,
+          ),
+        ];
+
+      case 'SWOT Analysis':
+        templateNodes = [
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Strengths',
+            position: Offset(screenSize.width * 0.2, screenSize.height * 0.1),
+            nodeType: NodeType.idea.name,
+            color: '0xFF42A5F5',
+            description: 'List the strengths of the project or business.',
+            size: 150,
+          ),
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Weaknesses',
+            position: Offset(screenSize.width * 0.3, screenSize.height * 0.2),
+            nodeType: NodeType.problem.name,
+            color: '0xFFFFC107',
+            description: 'List the weaknesses of the project or business.',
+            size: 90,
+          ),
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Opportunities',
+            position: Offset(screenSize.width * 0.1, screenSize.height * 0.3),
+            nodeType: NodeType.solution.name,
+            color: '0xFF66BB6A',
+            description: 'Identify opportunities for growth or improvement.',
+            size: 90,
+          ),
+          Node(
+            tag: NodeTag.untagged.name,
+            id: _generateId(),
+            title: 'Threats',
+            position: Offset(screenSize.width * 0.25, screenSize.height * 0.35),
+            nodeType: NodeType.problem.name,
+            color: '0xFFFFC107',
+            description: 'Identify potential threats to the project or business.',
             size: 90,
           ),
         ];

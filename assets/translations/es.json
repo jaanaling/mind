@@ -81,5 +81,77 @@
     "Idea for Revision": "Idea para revisión",
     "language": "Idioma",
     "Instructions": "Instructions",
-  "Untempled": "No templado"
+  "Untempled": "No templado",
+    "User Journey Mapping": "Mapeo del viaje del usuario",
+    "User Persona": "Persona del usuario",
+    "Touchpoints": "Puntos de contacto",
+    "Pain Points": "Puntos de dolor",
+    "Opportunities": "Oportunidades",
+
+    "Content Calendar": "Calendario de contenido",
+    "Content Topics": "Temas de contenido",
+    "Posting Schedule": "Programa de publicaciones",
+    "Responsible Team Members": "Miembros del equipo responsables",
+
+    "Team Collaboration": "Colaboración en equipo",
+    "Team Members": "Miembros del equipo",
+    "Roles and Responsibilities": "Roles y responsabilidades",
+    "Communication Channels": "Canales de comunicación",
+
+    "Marketing Strategy": "Estrategia de marketing",
+    "Target Market": "Mercado objetivo",
+    "Marketing Channels": "Canales de marketing",
+    "Budget Allocation": "Asignación presupuestaria",
+
+    "Event Planning": "Planificación de eventos",
+    "Event Goals": "Objetivos del evento",
+    "Venue": "Lugar",
+    "Guest List": "Lista de invitados",
+
+    "SWOT Analysis": "Análisis FODA",
+    "Strengths": "Fortalezas",
+    "Weaknesses": "Debilidades",
+    "Threats": "Amenazas",
+
+  "Earthy Tones": "Tonos terrosos",
+  "Olive Green": "Verde oliva",
+  "Slate Gray": "Gris pizarra",
+  "Tan": "Tan",
+  "Maroon": "Marrón",
+  "Burnt Orange": "Naranja quemado",
+
+  "Neon Lights": "Luces de neón",
+  "Neon Green": "Verde neón",
+  "Neon Pink": "Rosa neón",
+  "Neon Blue": "Azul neón",
+  "Neon Yellow": "Amarillo neón",
+  "Neon Purple": "Morado neón",
+
+  "Soft Pastels": "Pasteles suaves",
+  "Mint Green": "Verde menta",
+  "Baby Blue": "Azul bebé",
+  "Lavender": "Lavanda",
+  "Light Coral": "Coral claro",
+  "Peach Puff": "Durazno",
+
+  "Retro Vibes": "Vibraciones retro",
+  "Mustard Yellow": "Amarillo mostaza",
+  "Burnt Sienna": "Siena quemada",
+  "Teal": "Verde azulado",
+  "Eggplant": "Berenjena",
+  "Peacock Blue": "Azul pavo real",
+
+  "Bright and Bold": "Brillante y audaz",
+  "Fuchsia": "Fucsia",
+  "Electric Blue": "Azul eléctrico",
+  "Lime": "Lima",
+  "Bright Red": "Rojo brillante",
+  "Golden Yellow": "Amarillo dorado",
+
+  "Gradient Colors": "Colores en degradado",
+  "Sunset Orange": "Naranja al atardecer",
+  "Ocean Blue": "Azul océano",
+  "Sky Pink": "Rosa cielo",
+  "Sunflower Yellow": "Amarillo girasol",
+  "Lavender Purple": "Morado lavanda"
 }
