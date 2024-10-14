@@ -1,0 +1,64 @@
+name: bubblebrain
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: ^14.1.4
+  logger: ^2.0.2+1
+  flutter_bloc: ^8.1.5
+  gap: ^3.0.1
+  get_it: ^7.7.0
+  equatable: ^2.0.5
+  shared_preferences: ^2.3.1
+  webview_flutter: ^4.6.0
+  flutter_colorpicker: ^1.1.0
+  easy_localization: ^3.0.7
+  flutter_localizations:
+    sdk: flutter
+  advertising_id: ^2.7.1
+  amplitude_flutter: ^3.16.2
+  appsflyer_sdk: ^6.14.3
+  device_info_plus: ^10.1.0
+  package_info_plus: ^8.0.0
+  connectivity_plus: ^6.0.3
+  dio: ^5.5.0+1
+  facebook_app_events: ^0.17.1
+  firebase_core: ^3.2.0
+  firebase_messaging: ^15.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: ^2.3.0
+  json_serializable: ^6.8.0
+  build_runner: ^2.4.9
+
+flutter:
+  uses-material-design: true
+
+  assets:
+      - assets/
+      - assets/translations/
+      - assets/image/
+
+
+  fonts:
+    - family: RHD
+      fonts:
+        - asset: assets/fonts/RedHatDisplay-Black.ttf
+          weight: 900
+        - asset: assets/fonts/RedHatDisplay-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/RedHatDisplay-SemiBold.ttf
+          weight: 700
+
+    - family: BN
+      fonts:
+        - asset: assets/fonts/BebasNeue-Regular.ttf
